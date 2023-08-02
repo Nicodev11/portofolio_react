@@ -1,11 +1,17 @@
-import React from 'react';
+import React from "react";
+import styled from "styled-components/macro";
+
 
 const Home = () => {
   return (
-    <div>
-      <h1>Home</h1>
-    </div>
+    <HomeStyle>
+      
+    </HomeStyle>
   );
 };
+
+const HomeStyle = styled.div `
+
+`;
 
 export default Home;

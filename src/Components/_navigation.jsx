@@ -5,10 +5,11 @@ import styled from "styled-components/macro";
 const _navigation = () => {
   return (
     <Navigation>
-      <nav class="navbar navbar-expand-lg bg-dark">
-        <div class="container mb-3 border-bottom">
+      <header>
+        <nav class="navbar navbar-expand-lg bg-white">
+        <div class="container">
           <a class="navbar-brand" href="/">
-            <img src="./assets/img/logo/logobb.png" alt="logo" />
+            <img src="./assets/img/logo/logobw.png" alt="logo" />
           </a>
           <button
             class="navbar-toggler"
@@ -21,14 +22,14 @@ const _navigation = () => {
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
               <NavLink
                 to="/"
                 className="nav-link text-center mx-auto me-3"
                 activeClassName="active"
               >
-                Acceuil
+                Accueil
               </NavLink>
               <NavLink
                 to="/portofolio"
@@ -42,7 +43,7 @@ const _navigation = () => {
                 className="nav-link text-center mx-auto me-3"
                 activeClassName="active"
               >
-                A propos
+                À propos
               </NavLink>
               <NavLink
                 to="/contact"
@@ -55,15 +56,19 @@ const _navigation = () => {
           </div>
         </div> 
       </nav>
+      </header>
+      
     </Navigation>
   );
 };
 
 const Navigation = styled.div`
 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
   .nav-link {
     
-      color: #fff;
+      color: black;
       font-size: 1.2rem;
       text-transform: uppercase;
       font-weight: 500;
@@ -71,13 +76,13 @@ const Navigation = styled.div`
       transition: all 0.5s ease-in-out;
       
       &:hover {
-        color: #fff;
+        color: black;
       }
 
       // barre blanche sous la page active
       &.active {
 
-        color: #fff;
+        color: black;
 
         &::after {
           content: "";
@@ -85,8 +90,8 @@ const Navigation = styled.div`
           bottom: -2px;
           left: 0;
           width: 100%;
-          height: 3px;
-          background: #fff;
+          height: 2px;
+          background: black;
           transition: all 0.5s ease-in-out;
         }
       }
@@ -98,8 +103,8 @@ const Navigation = styled.div`
       bottom: -2px;
       transform: translate(-50%);
       width: 0;
-      height: 3px;
-      background: #fff;
+      height: 2px;
+      background: black;
       transition: width 0.3s ease;
       transform-origin: center;
     }
@@ -112,7 +117,7 @@ const Navigation = styled.div`
   }
 
   .navbar-toggler {
-    background-color: #fff;
+    background-color: black;
 
     &:hover {
       background-color: whitesmoke;
@@ -125,7 +130,7 @@ const Navigation = styled.div`
 
   .navbar-brand {
     img {
-      width: 100px;
+      width: 80px;
     }
   }
 

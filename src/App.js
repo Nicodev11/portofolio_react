@@ -6,7 +6,7 @@ import About from './Pages/About';
 import Contact from './Pages/Contact';
 import NotFound from './Pages/NotFound';
 import styled from 'styled-components/macro';
-import './Styles/style.css'
+import './Styles/style.scss'
 
 const App = () => {
   return (
